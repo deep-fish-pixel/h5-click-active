@@ -1,0 +1,213 @@
+/*
+YUI 3.17.2 (build 9c3c78e)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF; }
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF. 
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before,
+q:after {
+  content: ''; }
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal; }
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+  /*to enable resizing for IE*/ }
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000; }
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none; }
+
+/*
+*transition
+*/
+/*
+*transform
+*/
+/*
+*translate
+*/
+/*
+*translate
+*/
+/*
+*rotate
+*/
+body {
+  min-width: 320px !important;
+  max-width: 750px !important;
+  margin: auto; }
+
+/*data-clickactive="wave"*/
+a {
+  -webkit-tap-highlight-color: transparent; }
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: wave 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: wave 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: red;
+  opacity: 0;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5); }
+  .wave-large {
+    -webkit-animation: wave-large 1.5s;
+    animation: wave-large 1.5s; }
+
+@-webkit-keyframes wave {
+  0% {
+    opacity: .3;
+    -webkit-transform: scale(0.3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(0.5); } }
+@keyframes wave {
+  0% {
+    opacity: .3;
+    transform: scale(0.3); }
+  100% {
+    opacity: 1;
+    transform: scale(0.5); } }
+@-webkit-keyframes wave-large {
+  0% {
+    opacity: 1;
+    transform: scale(0.5); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(15); } }
+@keyframes wave-large {
+  0% {
+    opacity: 1;
+    transform: scale(0.5); }
+  100% {
+    opacity: 0;
+    transform: scale(15); } }
+/*click-wave end*/
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+.item {
+  background-color: #fff;
+  padding: .1rem;
+  font-size: .32rem; }
+  .item:nth-child(2n) {
+    background-color: rgba(121, 21, 243, 0.8); }
+
+.bolck-link {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  padding: .5rem 0;
+  font-size: .32rem;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

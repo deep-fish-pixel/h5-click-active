@@ -1,0 +1,74 @@
+@import "function";
+body{
+    min-width: 320px !important;
+    max-width: 750px !important;
+    margin: auto;
+}
+
+/*data-clickactive="wave"*/
+a{-webkit-tap-highlight-color: transparent;}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: wave 1s cubic-bezier(.165, .84, .44, 1);
+    animation: wave 1s cubic-bezier(.165, .84, .44, 1);
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: red;
+    opacity: 0;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    &-large {
+        -webkit-animation: wave-large 1.5s;
+        animation: wave-large 1.5s;
+    }
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+@-webkit-keyframes wave{
+    0% {
+        opacity: .3;
+        -webkit-transform: scale(.3);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(.5);
+    }
+}
+@keyframes wave{
+    0% {
+        opacity: .3;
+        transform: scale(.3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(.5);
+    }
+}
+
+
+@-webkit-keyframes wave-large{
+    0% {
+        opacity: 1;
+        transform: scale(.5);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(15);
+    }
+}
+@keyframes wave-large{
+    0% {
+        opacity: 1;
+        transform: scale(.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(15);
+    }
+}
+/*click-wave end*/
+
+

@@ -1,0 +1,19 @@
+@import "reset";
+@import "module";
+*{-webkit-tap-highlight-color: transparent;}
+.item{
+	background-color:#fff;
+	padding:.1rem;
+	font-size:.32rem;
+	&:nth-child(2n){
+		background-color:rgba(121, 21, 243, .8);
+	}
+}
+.bolck-link{
+	display:block;
+	background-color: #fff;
+	text-decoration:none;
+	padding:.5rem 0;
+	font-size:.32rem;
+	text-align: center;
+}
